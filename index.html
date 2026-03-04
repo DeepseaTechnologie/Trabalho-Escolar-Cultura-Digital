@@ -294,7 +294,7 @@
         <section id="estatisticas" class="secao estatisticas">
             <div class="container">
                 <h2 class="titulo-secao"><span>Dados sobre Representatividade</span></h2>
-                <div class="grid-estatisticas">
+                <div class="grid-stats">
                     <div class="card-estatistica">
                         <span class="numero" data-valor="3" data-sufixo="%">3%</span>
                         <p class="descricao-estatistica">dos cargos de tecnologia nos EUA sao ocupados por mulheres negras (dados de 2021).</p>
@@ -326,53 +326,64 @@
         <section id="recursos" class="secao recursos">
             <div class="container">
                 <h2 class="titulo-secao"><span>Saiba mais e se inspire</span></h2>
-                <div class="grid-recursos">
+                <div class="resources-grid">
                     <div class="recurso">
                         <div class="recurso-icon" aria-hidden="true">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
                         </div>
-                        <h3>Livros</h3>
-                        <ul>
-                            <li>"Estrelas Alem do Tempo" - Margot Lee Shetterly</li>
-                            <li>"Race After Technology" - Ruha Benjamin</li>
-                            <li>"O Calculo da Alma" - Dorothy Roberts</li>
-                            <li>"Algorithms of Oppression" - Safiya U. Noble</li>
-                        </ul>
+                        <div class="recurso-content">
+                            <h3>Livros</h3>
+                            <ul style="margin: 0.5rem 0 0 0; padding-left: 1.5rem; color: var(--cor-texto-muted); font-size: 0.95rem;">
+                                <li>"Estrelas Alem do Tempo" - Margot Lee Shetterly</li>
+                                <li>"Race After Technology" - Ruha Benjamin</li>
+                                <li>"O Calculo da Alma" - Dorothy Roberts</li>
+                                <li>"Algorithms of Oppression" - Safiya U. Noble</li>
+                            </ul>
+                        </div>
                     </div>
+
                     <div class="recurso">
                         <div class="recurso-icon" aria-hidden="true">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
                         </div>
-                        <h3>Documentarios e Filmes</h3>
-                        <ul>
-                            <li>"Estrelas Alem do Tempo" (2016) - Disney+</li>
-                            <li>"Coded Bias" (2020) - Netflix</li>
-                            <li>"A Vida Imediata" - curta sobre mulheres negras na ciencia</li>
-                        </ul>
+                        <div class="recurso-content">
+                            <h3>Documentarios e Filmes</h3>
+                            <ul style="margin: 0.5rem 0 0 0; padding-left: 1.5rem; color: var(--cor-texto-muted); font-size: 0.95rem;">
+                                <li>"Estrelas Alem do Tempo" (2016) - Disney+</li>
+                                <li>"Coded Bias" (2020) - Netflix</li>
+                                <li>"A Vida Imediata" - curta sobre mulheres negras na ciencia</li>
+                            </ul>
+                        </div>
                     </div>
+
                     <div class="recurso">
                         <div class="recurso-icon" aria-hidden="true">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
                         </div>
-                        <h3>Organizacoes</h3>
-                        <ul>
-                            <li><a href="https://www.blackgirlscode.com" target="_blank" rel="noopener noreferrer">Black Girls Code</a></li>
-                            <li><a href="https://www.ajl.org" target="_blank" rel="noopener noreferrer">Algorithmic Justice League</a></li>
-                            <li><a href="https://www.blackinai.org" target="_blank" rel="noopener noreferrer">Black in AI</a></li>
-                            <li><a href="https://www.girlswhocode.com" target="_blank" rel="noopener noreferrer">Girls Who Code</a></li>
-                        </ul>
+                        <div class="recurso-content">
+                            <h3>Organizacoes</h3>
+                            <ul style="margin: 0.5rem 0 0 0; padding-left: 1.5rem; color: var(--cor-texto-muted); font-size: 0.95rem;">
+                                <li><a href="https://www.blackgirlscode.com" target="_blank" rel="noopener noreferrer" style="color: var(--cor-texto-muted); text-decoration: none;">Black Girls Code</a></li>
+                                <li><a href="https://www.ajl.org" target="_blank" rel="noopener noreferrer" style="color: var(--cor-texto-muted); text-decoration: none;">Algorithmic Justice League</a></li>
+                                <li><a href="https://www.blackinai.org" target="_blank" rel="noopener noreferrer" style="color: var(--cor-texto-muted); text-decoration: none;">Black in AI</a></li>
+                                <li><a href="https://www.girlswhocode.com" target="_blank" rel="noopener noreferrer" style="color: var(--cor-texto-muted); text-decoration: none;">Girls Who Code</a></li>
+                            </ul>
+                        </div>
                     </div>
+
                     <div class="recurso">
                         <div class="recurso-icon" aria-hidden="true">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
                         </div>
-                        <h3>Perfis para seguir</h3>
-                        <ul>
-                            <li>@joybuolamwini</li>
-                            <li>@timnitgebru</li>
-                            <li>@kimberly_bryant</li>
-                            <li>@ruhabenjamin</li>
-                        </ul>
+                        <div class="recurso-content">
+                            <h3>Perfis para seguir</h3>
+                            <ul style="margin: 0.5rem 0 0 0; padding-left: 1.5rem; color: var(--cor-texto-muted); font-size: 0.95rem;">
+                                <li>@joybuolamwini</li>
+                                <li>@timnitgebru</li>
+                                <li>@kimberly_bryant</li>
+                                <li>@ruhabenjamin</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -441,8 +452,5 @@
     </footer>
 
     <script type="module" src="animacoes/main-new.js"></script>
-</body>
-</html>
-    <script src="animacoes/main.js"></script>
 </body>
 </html>

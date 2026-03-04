@@ -278,9 +278,17 @@
     background: linear-gradient(135deg, rgba(78, 205, 196, 0.05) 0%, rgba(255, 107, 107, 0.05) 100%);
 }
 
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
 .recurso {
     display: flex;
-    gap: 2rem;
+    flex-direction: column;
+    gap: 1.5rem;
     align-items: flex-start;
     padding: 2rem;
     background: var(--cor-bg-card);
@@ -292,7 +300,8 @@
 .recurso:hover {
     background: var(--cor-bg-card-hover);
     border-color: var(--cor-borda-hover);
-    transform: translateX(4px);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 .recurso-icon {
@@ -304,24 +313,54 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0.3;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.recurso:hover .recurso-icon {
+    transform: scale(1.1);
+    filter: brightness(1.1);
 }
 
 .recurso-icon svg {
     width: 24px;
     height: 24px;
-    color: #fff;
+    stroke: currentColor;
+}
+
+.recurso-content {
+    width: 100%;
 }
 
 .recurso-content h3 {
-    margin-bottom: 0.5rem;
+    margin: 0 0 1rem 0;
     color: var(--cor-texto-titulo);
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
-.recurso-content p {
+.recurso-content ul {
+    list-style: none;
+    padding: 0;
     margin: 0;
+}
+
+.recurso-content li {
+    padding: 0.5rem 0;
     color: var(--cor-texto-muted);
     font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.recurso-content a {
+    color: var(--cor-texto-muted);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+.recurso-content a:hover {
+    color: var(--grad-1);
 }
 
 .recurso-link {
@@ -457,6 +496,12 @@ footer p {
    RESPONSIVE AJUSTES HOMEPAGE
    ============================================ */
 
+@media (max-width: 1024px) {
+    .resources-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
 @media (max-width: 768px) {
     .conteudo-introducao {
         grid-template-columns: 1fr;
@@ -472,10 +517,52 @@ footer p {
 
     .recurso {
         flex-direction: column;
-        text-align: center;
+        text-align: left;
+    }
+
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .recurso-icon {
+        width: 50px;
+        height: 50px;
     }
 
     .criador-card {
         padding: 1.5rem 1rem;
+    }
+
+    .timeline::before {
+        left: 30px;
+    }
+
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding-left: 120px;
+        padding-right: 0;
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .recurso {
+        padding: 1.5rem;
+    }
+
+    .recurso-content h3 {
+        font-size: 1rem;
+    }
+
+    .recurso-content li {
+        font-size: 0.9rem;
+    }
+
+    .grid-stats {
+        grid-template-columns: 1fr;
     }
 }
