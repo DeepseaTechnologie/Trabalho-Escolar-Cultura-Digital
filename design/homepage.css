@@ -1,0 +1,481 @@
+/* ============================================
+   HOMEPAGE - ESTILOS ESPECÍFICOS
+   ============================================ */
+
+/* ============================================
+   SEÇÃO INTRODUÇÃO APRIMORADA
+   ============================================ */
+
+.introducao {
+    background: linear-gradient(180deg, rgba(255, 107, 107, 0.02) 0%, transparent 50%, rgba(167, 139, 250, 0.02) 100%);
+}
+
+.conteudo-introducao {
+    align-items: stretch;
+}
+
+.texto-introducao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.texto-introducao p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    color: var(--cor-texto);
+    line-height: 1.9;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.texto-introducao p::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: var(--grad-accent);
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.secao.revelado .texto-introducao p::before {
+    opacity: 1;
+}
+
+.intro-visual {
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3));
+}
+
+/* ============================================
+   GRID DE BIOGRAFIAS APRIMORADO
+   ============================================ */
+
+.grid-cards {
+    gap: 2rem;
+}
+
+.card {
+    background: var(--cor-bg-card);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--radius);
+    overflow: hidden;
+    padding: 0;
+}
+
+.card-conteudo {
+    padding: 2rem 1.5rem;
+}
+
+.card-titulo {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.card-area {
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 1rem;
+}
+
+.card-descricao {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--cor-texto-muted);
+}
+
+.card:hover {
+    border-color: var(--card-accent, var(--grad-1));
+}
+
+/* ============================================
+   TIMELINE APRIMORADA
+   ============================================ */
+
+.linha-do-tempo {
+    position: relative;
+    padding: 6rem 0;
+}
+
+.timeline {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--grad-timeline);
+}
+
+.timeline-item {
+    margin-bottom: 3rem;
+    position: relative;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.timeline-item:nth-child(odd) {
+    padding-right: 52%;
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+    padding-left: 52%;
+    text-align: left;
+}
+
+.timeline-data {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    width: 80px;
+    height: 80px;
+    background: var(--cor-bg);
+    border: 3px solid var(--cor-borda);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--grad-1);
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover .timeline-data {
+    border-color: var(--grad-1);
+    background: rgba(255, 107, 107, 0.05);
+    transform: translateX(-50%) scale(1.1);
+}
+
+.timeline-conteudo {
+    background: var(--cor-bg-card);
+    border: 1px solid var(--cor-borda);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover .timeline-conteudo {
+    border-color: var(--grad-1);
+    background: var(--cor-bg-card-hover);
+}
+
+.timeline-conteudo h3 {
+    margin-bottom: 0.5rem;
+    color: var(--cor-texto-titulo);
+    font-size: 1.1rem;
+}
+
+.timeline-conteudo p {
+    color: var(--cor-texto-muted);
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* Media query para timeline em mobile */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 30px;
+    }
+
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding-left: 120px;
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .timeline-data {
+        left: 30px;
+        width: 60px;
+        height: 60px;
+        font-size: 0.9rem;
+    }
+}
+
+/* ============================================
+   SEÇÃO ESTATÍSTICAS
+   ============================================ */
+
+.estatisticas {
+    background: linear-gradient(135deg, rgba(255, 107, 107, 0.05) 0%, rgba(167, 139, 250, 0.05) 100%);
+}
+
+.grid-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+}
+
+.card-estatistica {
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    background: var(--cor-bg-card);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--radius);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-estatistica::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--grad-accent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card-estatistica:hover {
+    background: var(--cor-bg-card-hover);
+    border-color: var(--cor-borda-hover);
+    transform: translateY(-4px);
+}
+
+.card-estatistica:hover::before {
+    opacity: 1;
+}
+
+.numero {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--grad-1);
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--cor-texto-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* ============================================
+   SEÇÃO RECURSOS
+   ============================================ */
+
+.recursos {
+    background: linear-gradient(135deg, rgba(78, 205, 196, 0.05) 0%, rgba(255, 107, 107, 0.05) 100%);
+}
+
+.recurso {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    padding: 2rem;
+    background: var(--cor-bg-card);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--radius);
+    transition: all 0.3s ease;
+}
+
+.recurso:hover {
+    background: var(--cor-bg-card-hover);
+    border-color: var(--cor-borda-hover);
+    transform: translateX(4px);
+}
+
+.recurso-icon {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    background: var(--grad-accent);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.3;
+}
+
+.recurso-icon svg {
+    width: 24px;
+    height: 24px;
+    color: #fff;
+}
+
+.recurso-content h3 {
+    margin-bottom: 0.5rem;
+    color: var(--cor-texto-titulo);
+}
+
+.recurso-content p {
+    margin: 0;
+    color: var(--cor-texto-muted);
+    font-size: 0.95rem;
+}
+
+.recurso-link {
+    display: inline-block;
+    margin-top: 0.75rem;
+    color: var(--grad-1);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.recurso-link::after {
+    content: ' →';
+    transition: transform 0.3s ease;
+}
+
+.recurso:hover .recurso-link::after {
+    transform: translateX(4px);
+}
+
+/* ============================================
+   SEÇÃO CRIADORES / FOOTER
+   ============================================ */
+
+.criadores {
+    background: linear-gradient(135deg, rgba(167, 139, 250, 0.05) 0%, rgba(78, 205, 196, 0.05) 100%);
+}
+
+.grid-criadores {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.criador-card {
+    text-align: center;
+    padding: 2rem;
+    background: var(--cor-bg-card);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--radius);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.criador-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 107, 107, 0.1) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.criador-card:hover::before {
+    opacity: 1;
+}
+
+.criador-card:hover {
+    background: var(--cor-bg-card-hover);
+    border-color: var(--cor-borda-hover);
+    transform: translateY(-8px);
+}
+
+.criador-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: var(--grad-accent);
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+}
+
+.criador-nome {
+    font-size: 1.15rem;
+    margin-bottom: 0.25rem;
+    color: var(--cor-texto-titulo);
+}
+
+.criador-funcao {
+    font-size: 0.85rem;
+    color: var(--cor-texto-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* ============================================
+   RODAPÉ
+   ============================================ */
+
+footer {
+    padding: 4rem 0 2rem;
+    border-top: 1px solid var(--cor-borda);
+    text-align: center;
+    color: var(--cor-texto-muted);
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: var(--cor-texto-muted);
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--grad-1);
+}
+
+/* ============================================
+   RESPONSIVE AJUSTES HOMEPAGE
+   ============================================ */
+
+@media (max-width: 768px) {
+    .conteudo-introducao {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-links {
+        gap: 1rem;
+    }
+
+    .recurso {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .criador-card {
+        padding: 1.5rem 1rem;
+    }
+}

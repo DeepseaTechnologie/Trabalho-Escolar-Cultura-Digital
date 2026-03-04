@@ -1,0 +1,404 @@
+/* ============================================
+   ANIMATIONS & KEYFRAMES - ADVANCED
+   ============================================ */
+
+/* Loading/Pulsing animations */
+@keyframes pulse-smooth {
+    0%, 100% { 
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% { 
+        opacity: 0.6;
+        transform: scale(1.05);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-10px) rotate(1deg);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+@keyframes glow-pulse {
+    0%, 100% {
+        box-shadow: 0 0 5px rgba(255, 107, 107, 0.2), inset 0 0 5px rgba(255, 107, 107, 0.1);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 107, 107, 0.4), inset 0 0 10px rgba(255, 107, 107, 0.2);
+    }
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes rotate-in {
+    from {
+        opacity: 0;
+        transform: rotate(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes bounce-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes gradient-shift-fast {
+    0%, 100% { 
+        background-position: 0% 50%; 
+    }
+    50% { 
+        background-position: 100% 50%; 
+    }
+}
+
+/* Utility animation classes */
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse {
+    animation: pulse-smooth 2s ease-in-out infinite;
+}
+
+.animate-in {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-glow {
+    animation: glow-pulse 2s ease-in-out infinite;
+}
+
+/* ============================================
+   BUTTONS & INTERACTIVE ELEMENTS
+   ============================================ */
+
+button, .btn, .cta-button {
+    padding: 0.75rem 1.75rem;
+    border-radius: var(--radius-full);
+    border: 1px solid var(--cor-borda);
+    background: var(--cor-bg-card);
+    color: var(--cor-texto);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    font-family: var(--fonte-corpo);
+    font-size: 0.95rem;
+}
+
+button::before, .btn::before, .cta-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--grad-accent);
+    transition: left 0.3s ease;
+    z-index: -1;
+}
+
+button:hover, .btn:hover, .cta-button:hover {
+    color: #fff;
+    border-color: transparent;
+}
+
+button:hover::before, .btn:hover::before, .cta-button:hover::before {
+    left: 0;
+}
+
+button:active, .btn:active, .cta-button:active {
+    transform: scale(0.98);
+}
+
+/* Botões com gradientes */
+.btn-primary {
+    background: var(--grad-accent);
+    border: none;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px -8px rgba(255, 107, 107, 0.3);
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 2px solid var(--cor-borda);
+}
+
+.btn-secondary:hover {
+    border-color: var(--grad-1);
+    background: rgba(255, 107, 107, 0.08);
+}
+
+/* ============================================
+   CARDS ADVANCED EFFECTS
+   ============================================ */
+
+.card {
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    opacity: 0;
+    background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.card:hover::after {
+    opacity: 1;
+}
+
+/* ============================================
+   BADGES & TAGS
+   ============================================ */
+
+.badge {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    border-radius: var(--radius-full);
+    background: var(--cor-bg-card);
+    border: 1px solid var(--cor-borda);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--cor-texto-muted);
+}
+
+.badge.primary {
+    background: rgba(255, 107, 107, 0.1);
+    border-color: rgba(255, 107, 107, 0.3);
+    color: #FF6B6B;
+}
+
+.badge.secondary {
+    background: rgba(78, 205, 196, 0.1);
+    border-color: rgba(78, 205, 196, 0.3);
+    color: #4ECDC4;
+}
+
+/* ============================================
+   LINKS ENHANCED
+   ============================================ */
+
+a {
+    position: relative;
+    color: var(--cor-texto);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:not(.menu a):not(.card a):not(.btn):not(.badge) {
+    color: var(--grad-1);
+    font-weight: 500;
+}
+
+a:not(.menu a):not(.card a):not(.btn):not(.badge)::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--grad-1);
+    transition: width 0.3s ease;
+}
+
+a:not(.menu a):not(.card a):not(.btn):not(.badge):hover::after {
+    width: 100%;
+}
+
+/* ============================================
+   RESPONSIVE GRID SYSTEM
+   ============================================ */
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+/* ============================================
+   TEXTO & TIPOGRAFIA AVANÇADA
+   ============================================ */
+
+.text-gradient {
+    background: var(--grad-hero);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 200% 200%;
+    animation: gradient-shift-fast 4s ease infinite;
+}
+
+.text-highlight {
+    position: relative;
+    display: inline-block;
+}
+
+.text-highlight::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--grad-accent);
+    border-radius: 2px;
+}
+
+.text-muted {
+    color: var(--cor-texto-muted);
+}
+
+.text-small {
+    font-size: 0.875rem;
+    color: var(--cor-texto-muted);
+}
+
+/* ============================================
+   MEDIA QUERIES RESPONSIVA
+   ============================================ */
+
+@media (max-width: 768px) {
+    .grid-2, .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .conteudo-introducao {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .intro-visual {
+        max-width: 100%;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .scroll-indicator {
+        display: none;
+    }
+
+    .titulo-principal {
+        font-size: 2rem;
+    }
+
+    .subtitulo {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu a {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    .card-conteudo {
+        padding: 1rem;
+    }
+
+    .titulo-secao {
+        font-size: 1.5rem;
+    }
+
+    .secao {
+        padding: 3rem 0;
+    }
+}
+
+/* ============================================
+   DARK MODE (default) - Utilities
+   ============================================ */
+
+.backdrop-blur {
+    backdrop-filter: blur(10px);
+}
+
+.transition-all {
+    transition: all 0.3s ease;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.select-none {
+    user-select: none;
+}
+
+.no-scroll {
+    overflow: hidden;
+}

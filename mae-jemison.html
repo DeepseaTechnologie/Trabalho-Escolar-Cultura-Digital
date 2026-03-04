@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mae Jemison - A primeira mulher negra a viajar ao espaço e uma visionária dedicada a tecnologia e inovação humanitária.">
     <title>Mae Jemison - Mulheres Negras na Tecnologia</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="design/global.css">
+    <link rel="stylesheet" href="design/components.css">
     <link rel="stylesheet" href="design/biografia.css">
+    <link rel="stylesheet" href="design/themes.css">
+    
     <style>
         :root {
-            --bio-color: #A78BFA;
-            --bio-color-glow: rgba(167, 139, 250, 0.18);
-            --bio-badge-bg: rgba(167, 139, 250, 0.1);
-            --bio-badge-border: rgba(167, 139, 250, 0.2);
-            --bio-gradient: linear-gradient(135deg, #A78BFA, #C084FC);
+            --cor-primaria: #A78BFA;
+            --cor-secundaria: #C084FC;
+            --cor-accent: #D8B4FE;
+            --gradiente: linear-gradient(135deg, #A78BFA, #C084FC);
         }
     </style>
 </head>
@@ -23,16 +28,25 @@
     <div id="particles-bg" class="particles-bg" aria-hidden="true"></div>
     <div id="cursor-glow" class="cursor-glow" aria-hidden="true"></div>
 
-    <header class="bio-hero">
+    <header class="bio-hero tema-mae">
+        <div class="bio-theme-bg"></div>
+        <div class="bio-color-bar"></div>
+        
         <div class="container bio-hero-content">
             <a href="index.html#biografias" class="bio-back-link">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-                Voltar
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Voltar às Biografias
             </a>
-            <div class="bio-badge">Astronauta &bull; Medica &bull; Engenheira</div>
+            
+            <div class="bio-badge">🚀 Astronauta · Médica · Engenheira</div>
+            
             <h1 class="bio-hero-name">Mae Jemison</h1>
-            <p class="bio-hero-subtitle">A primeira mulher negra a viajar ao espaco</p>
-            <p class="bio-hero-dates">1956 &mdash; presente</p>
+            
+            <p class="bio-hero-subtitle">A Primeira Mulher Negra no Espaço</p>
+            
+            <p class="bio-hero-dates">🫧 17 de Outubro, 1956 — Presente (67 anos)</p>
         </div>
     </header>
 
@@ -41,12 +55,27 @@
 
         <section class="bio-section">
             <div class="container">
-                <h2 class="bio-section-title"><span>Sua Historia</span></h2>
+                <h2 class="bio-section-title"><span>Sua Jornada Extraordinária</span></h2>
+                
                 <div class="bio-story">
-                    <p>Mae Carol Jemison nasceu em 17 de outubro de 1956, em Decatur, Alabama, e cresceu em Chicago. Desde crianca, Mae era fascinada pelo espaco e pela ciencia. Inspirada pelo movimento dos direitos civis e pela serie de TV "Star Trek" -- especialmente pela personagem Tenente Uhura, uma mulher negra em posicao de lideranca --, Mae sabia que queria ir alem.</p>
-                    <p>Aos 16 anos, ingressou na Universidade de Stanford, onde se formou em engenharia quimica e estudos africanos e afro-americanos. Em seguida, obteve seu doutorado em medicina na Cornell Medical College. Antes de entrar na NASA, Mae serviu como medica voluntaria no Peace Corps na Liberia e Serra Leoa, tratando pacientes em condicoes precarias.</p>
-                    <p>Em 1987, Mae foi selecionada pelo programa de astronautas da NASA entre mais de 2.000 candidatos. Em 12 de setembro de 1992, a bordo do onibus espacial Endeavour na missao STS-47, Mae Jemison se tornou a primeira mulher negra a viajar ao espaco. Durante os oito dias da missao, conduziu experimentos sobre ausencia de gravidade e enjoo no espaco.</p>
-                    <p>Apos deixar a NASA em 1993, Mae fundou a Jemison Group, uma empresa de consultoria em tecnologia, e o programa 100 Year Starship, financiado pela DARPA, que busca tornar viagens interestelares possiveis em 100 anos. Ela tambem criou o programa Earth We Share, que ensina ciencia para jovens ao redor do mundo.</p>
+                    <p><strong>Mae Carol Jemison</strong> nasceu em 17 de outubro de 1956, em Decatur, Alabama, durante uma era de segregação racial brutal. Quando tinha 3 anos, sua família se mudou para Chicago, buscando melhores oportunidades. Desde a infância, Mae era fascinada por ciência e espaço. Seu pai era um pedreiro e um jardineiro; sua mãe era professora de artes e conselheira—ambos enfatizavam a importância da educação e do trabalho árduo.</p>
+                    
+                    <p>Mae foi profundamente inspirada pelo movimento dos direitos civis e, crucialmente, pela série de TV "Star Trek." Para uma menina negra dos anos 1960, ver a Tenente Uhura—uma mulher negra em posição de poder e inteligência, ao lado de capitães e cientistas—era revolucionário. "Eu vi uma coisa que me permitiu dizer 'eu posso fazer isso'", Mae diria mais tarde. Essa visão plantada em sua infância a guiaria por toda sua vida.</p>
+                    
+                    <p>Aos 16 anos, Mae ingressou na Universidade de Stanford. Ela se formou com honras em Engenharia Química e também completou um segundo curso em Estudos Africanos e Afro-Americanos—unindo sua paixão pela tecnologia com seu compromisso com sua herança. Seu tese de graduação foi sobre síntese de processos químicos. Não era uma adolescente comum; era uma visionária já traçando seu caminho extraordinário.</p>
+                    
+                    <p>Depois de Stanford, Mae obteve seu doutorado em Medicina pela Cornell Medical College. Isso a tornava engenheira e médica—uma combinação rara e poderosa de habilidades. Antes de sonhar alto com o espaço, Mae decidiu servir à humanidade. Trabalhou como médica voluntária no Peace Corps na Liberia e Serra Leoa (1983-1985), tratando pacientes em condições precárias, fazendo diagnósticos com recursos limitados, salvando vidas com criatividade e dedicação.</p>
+                    
+                    <blockquote style="margin: 2.5rem 0; padding: 1.5rem; background: rgba(167, 139, 250, 0.1); border-left: 4px solid #A78BFA; border-radius: 8px; font-style: italic;">
+                        "Nunca se deixe limitar pela imaginação limitada de outras pessoas. Nunca limite os outros por causa das suas próprias limitações."
+                        <br><strong>— Mae Jemison</strong>
+                    </blockquote>
+                    
+                    <p>Em 1987, Mae se candidatou ao programa de astronautas da NASA. As chances eram colossais: havia mais de 2.000 candidatos para apenas 15 posições. Mas Mae não era uma candidata comum. Sua combinação de engenharia, medicina, experiência internacioinal e determinação inabalável chamou a atenção. Ela foi selecionada. Após 5 anos de treinamento intenso, no dia 8 de setembro de 1992, aos 30 anos, Mae Jemison fez história.</p>
+                    
+                    <p>Num dia nublado em Cabo Canaveral, o ônibus espacial Endeavour roared to life, carregando Mae ao espaço. Ela se tornou a primeira mulher negra a viajar ao espaço. Durante os 8 dias da missão STS-47, ela conduziu experimentos científicos sobre ausência de gravidade e enjoo espacial—trabalho que contribuiria para futuras missões. Mas talvez mais importante: ela provou que o teto de vidro podia ser quebrado, que os sonhos de meninas negras podem se tornar realidade, que não existem limitações reais além daquelas que aceitamos.</p>
+                    
+                    <p>Após deixar a NASA em 1993 (de forma voluntária—não foi forçada), Mae não parou de sonhar. Fundou a Jemison Group, uma empresa de consultoria em tecnologia focada em inovação humanitária. Criou o "100 Year Starship," um programa financiado pela DARPA que busca tornar viagens interestelares humanamente possíveis em 100 anos. Desenvolveu o "Earth We Share," um programa educacional global que ensina ciência e tecnologia a jovens em diversos países. Mae é, fundamentalmente, uma visionária que vê a tecnologia não como um fim em si mesmo, mas como um meio para resolver os maiores problemas da humanidade.</p>
                 </div>
             </div>
         </section>
@@ -54,93 +83,162 @@
         <section class="bio-section">
             <div class="container">
                 <div class="bio-quote">
-                    <p>Nunca se deixe limitar pela imaginacao limitada de outras pessoas. Nunca limite os outros por causa das suas proprias limitacoes.</p>
-                    <cite>-- Mae Jemison</cite>
+                    <p>"Ouço pessoas dizerem 'Oh, estou tão ocupado'. Bem, você está? Porque você pode parar de olhar para você mesmo como 'ocupado'—o que você está fazendo é escolher de forma consciente a realizar essas tarefas. Não é algo passivo, é algo ativo."</p>
+                    <cite>— Mae Jemison</cite>
                 </div>
             </div>
         </section>
 
         <section class="bio-section">
             <div class="container">
-                <h2 class="bio-section-title"><span>Conquistas Principais</span></h2>
-                <div class="bio-highlights">
+                <h2 class="bio-section-title"><span>Realizações Históricas</span></h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
                     <div class="bio-highlight-card">
                         <div class="bio-highlight-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
                         </div>
-                        <h3>Primeira Mulher Negra no Espaco (1992)</h3>
-                        <p>A bordo do Endeavour, tornou-se a primeira mulher negra da historia a viajar ao espaco, abrindo portas para futuras astronautas.</p>
+                        <h3>Primeira Mulher Negra no Espaço (1992)</h3>
+                        <p>A bordo do Endeavour na missão STS-47, tornou-se a primeira mulher negra da história a viajar ao espaço. Uma conquista que abriu portas para futuras astronautas negras.</p>
                     </div>
+                    
                     <div class="bio-highlight-card">
                         <div class="bio-highlight-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
                         </div>
                         <h3>100 Year Starship</h3>
-                        <p>Fundou e lidera o projeto que visa desenvolver capacidades para viagens interestelares humanas nos proximos 100 anos.</p>
+                        <p>Fundou este programa inovador financiado pela DARPA para desenvolver tecnologias que permitirão viagens interestelares significativas nos próximos 100 anos.</p>
                     </div>
+                    
                     <div class="bio-highlight-card">
                         <div class="bio-highlight-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+                            </svg>
                         </div>
-                        <h3>Tripla Formacao</h3>
-                        <p>Engenheira quimica por Stanford, doutora em medicina pela Cornell e astronauta da NASA -- uma combinacao unica de habilidades.</p>
+                        <h3>Formação Tripla Única</h3>
+                        <p>Engenheira Química (Stanford), Médica (Cornell) e Astronauta (NASA)—uma combinação extraordinária que poucos alcançaram na história.</p>
                     </div>
+                    
                     <div class="bio-highlight-card">
                         <div class="bio-highlight-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/>
+                                <path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/>
+                            </svg>
                         </div>
-                        <h3>Aparicao em Star Trek</h3>
-                        <p>Em 1993, Mae realizou um sonho de infancia ao participar de um episodio de "Star Trek: The Next Generation", a serie que a inspirou.</p>
+                        <h3>Aparição em Star Trek (1993)</h3>
+                        <p>Realizou um sonho de infância ao aparecer em um episódio de "Star Trek: The Next Generation"—a série que a inspirou a sonhar alto.</p>
+                    </div>
+
+                    <div class="bio-highlight-card">
+                        <div class="bio-highlight-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="1"/>
+                                <circle cx="19" cy="5" r="1"/>
+                                <circle cx="5" cy="19" r="1"/>
+                                <circle cx="5" cy="5" r="1"/>
+                                <circle cx="19" cy="19" r="1"/>
+                            </svg>
+                        </div>
+                        <h3>Earth We Share</h3>
+                        <p>Criou este programa educacional global que ensina ciência e tecnologia a jovens em diversos países, inspirando a próxima geração de inovadores.</p>
+                    </div>
+
+                    <div class="bio-highlight-card">
+                        <div class="bio-highlight-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+                            </svg>
+                        </div>
+                        <h3>Inovação Humanitária</h3>
+                        <p>Através da Jemison Group, desenvolveu tecnologias com foco em solucionar problemas humanitários—saúde, educação, sustentabilidade—em todo o mundo.</p>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="bio-section" style="background: linear-gradient(135deg, rgba(167, 139, 250, 0.1) 0%, rgba(192, 132, 252, 0.1) 100%); border-top: 1px solid rgba(167, 139, 250, 0.2); border-bottom: 1px solid rgba(167, 139, 250, 0.2); margin: 4rem 0;">
+            <div class="container" style="text-align: center;">
+                <h3 style="font-size: 1.4rem; margin-bottom: 1.5rem; color: #A78BFA;">Legado de Infinitas Possibilidades</h3>
+                <p style="font-size: 1.1rem; max-width: 700px; margin: 0 auto; color: var(--cor-texto); line-height: 1.9;">
+                    Mae Jemison não apenas alcançou o espaço—ela expandiu os limites do que é possível. 
+                    <br><br>
+                    Quando ela entrou naquele ônibus espacial, ela levou com ela todas as meninas negras que tinham visto "Star Trek" e sonhado em segredo. 
+                    Ela provou que raça, gênero e origem não determinam seu destino. Talento, educação, determinação e coragem sim.
+                    <br><br>
+                    Hoje, Mae continua trabalhando em missão humanitária global, desenvolvendo tecnologias que resolvem problemas reais. Seu legado não é apenas sobre ter viajado ao espaço—é sobre ter aberto o espaço mental de possibilidades para milhões de pessoas que foram told "você não pode", "você não pertence aqui", "pessoas como você não fazem isso." Mae Jemison disse: sim, fazemos.
+                </p>
             </div>
         </section>
 
         <section class="bio-section">
             <div class="container">
-                <h2 class="bio-section-title"><span>Legado</span></h2>
-                <div class="bio-legacy">
-                    <p>Mae Jemison provou que nao existem limites para quem ousa sonhar grande. De uma menina negra de Chicago que olhava para as estrelas a primeira mulher negra a orbitar a Terra, sua trajetoria e um testemunho do poder da determinacao. Hoje, ela continua trabalhando para inspirar jovens e avancando a fronteira da ciencia e da exploracao espacial.</p>
-                </div>
-            </div>
-        </section>
+                <h2 class="bio-section-title"><span>Outras Pioneiras</span></h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem;">
+                    <a href="katherine-johnson.html" class="card" style="--card-accent: #FF6B6B; text-decoration: none;">
+                        <div class="card-conteudo">
+                            <div class="card-icon-wrap">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                            </div>
+                            <h3 class="card-titulo">Katherine Johnson</h3>
+                            <p class="card-area">Matemática</p>
+                        </div>
+                    </a>
 
-        <section class="bio-nav">
-            <div class="container">
-                <p class="bio-nav-title">Conheca tambem</p>
-                <div class="bio-nav-grid">
-                    <a href="katherine-johnson.html" class="bio-nav-link"><span class="nav-dot" style="background:#FF6B6B;"></span> Katherine Johnson</a>
-                    <a href="dorothy-vaughan.html" class="bio-nav-link"><span class="nav-dot" style="background:#4ECDC4;"></span> Dorothy Vaughan</a>
-                    <a href="mary-jackson.html" class="bio-nav-link"><span class="nav-dot" style="background:#FFE66D;"></span> Mary Jackson</a>
-                    <a href="ursula-burns.html" class="bio-nav-link"><span class="nav-dot" style="background:#F472B6;"></span> Ursula Burns</a>
-                    <a href="kimberly-bryant.html" class="bio-nav-link"><span class="nav-dot" style="background:#34D399;"></span> Kimberly Bryant</a>
-                    <a href="arlan-hamilton.html" class="bio-nav-link"><span class="nav-dot" style="background:#FBBF24;"></span> Arlan Hamilton</a>
-                    <a href="joy-buolamwini.html" class="bio-nav-link"><span class="nav-dot" style="background:#60A5FA;"></span> Joy Buolamwini</a>
-                    <a href="timnit-gebru.html" class="bio-nav-link"><span class="nav-dot" style="background:#F87171;"></span> Timnit Gebru</a>
-                    <a href="ruha-benjamin.html" class="bio-nav-link"><span class="nav-dot" style="background:#C084FC;"></span> Ruha Benjamin</a>
-                    <a href="ayanna-howard.html" class="bio-nav-link"><span class="nav-dot" style="background:#2DD4BF;"></span> Ayanna Howard</a>
-                    <a href="lisa-gelobter.html" class="bio-nav-link"><span class="nav-dot" style="background:#FB923C;"></span> Lisa Gelobter</a>
+                    <a href="dorothy-vaughan.html" class="card" style="--card-accent: #4ECDC4; text-decoration: none;">
+                        <div class="card-conteudo">
+                            <div class="card-icon-wrap">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="2" y="3" width="20" height="14" rx="2"/>
+                                </svg>
+                            </div>
+                            <h3 class="card-titulo">Dorothy Vaughan</h3>
+                            <p class="card-area">Programadora</p>
+                        </div>
+                    </a>
+
+                    <a href="mary-jackson.html" class="card" style="--card-accent: #FBBF24; text-decoration: none;">
+                        <div class="card-conteudo">
+                            <div class="card-icon-wrap">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                            </div>
+                            <h3 class="card-titulo">Mary Jackson</h3>
+                            <p class="card-area">Engenheira</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="rodape">
+    <footer style="border-top: 1px solid rgba(167, 139, 250, 0.2);">
         <div class="container">
-            <div class="rodape-conteudo">
-                <div class="rodape-brand">
-                    <a href="index.html" style="text-decoration:none;"><span class="rodape-logo">MNT</span></a>
-                    <p>Mulheres Negras na Tecnologia</p>
-                </div>
-                <div class="rodape-textos">
-                    <p class="rodape-texto">Trabalho escolar sobre Mulheres Negras na Tecnologia</p>
-                </div>
-            </div>
-            <div class="rodape-bottom">
-                <p>&copy; 2025 - Projeto de conscientizacao e homenagem</p>
-            </div>
+            <p style="text-align: center; margin-bottom: 1rem;">
+                <a href="index.html" style="color: #A78BFA; text-decoration: none; font-weight: 600;">
+                    ← Voltar para a Página Principal
+                </a>
+            </p>
+            <p style="text-align: center; color: var(--cor-texto-muted);">
+                Celebrando Mae Jemison | 1956-Presente | A Mulher que Viajou ao Espaço e Continua Sonhando
+            </p>
         </div>
     </footer>
+
+    <script type="module" src="animacoes/main-new.js"></script>
+</body>
+</html>
 
     <script src="animacoes/main.js"></script>
 </body>

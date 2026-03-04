@@ -1,0 +1,250 @@
+/* ============================================
+   TEMAS INDIVIDUAIS POR PERSONALIDADE
+   Cada figura tem seus próprios tons e estilos
+   ============================================ */
+
+/* Katherine Johnson - Vermelho/Rosa */
+.tema-katherine {
+    --cor-primaria: #FF6B6B;
+    --cor-secundaria: #FFA07A;
+    --cor-accent: #FF8C94;
+    --gradiente: linear-gradient(135deg, #FF6B6B, #FFA07A);
+}
+
+/* Dorothy Vaughan - Ciano/Verde */
+.tema-dorothy {
+    --cor-primaria: #4ECDC4;
+    --cor-secundaria: #45B8AE;
+    --cor-accent: #359B94;
+    --gradiente: linear-gradient(135deg, #4ECDC4, #45B8AE);
+}
+
+/* Mary Jackson - Dourado/Amarelo */
+.tema-mary {
+    --cor-primaria: #FBBF24;
+    --cor-secundaria: #F59E0B;
+    --cor-accent: #D97706;
+    --gradiente: linear-gradient(135deg, #FBBF24, #F59E0B);
+}
+
+/* Mae Jemison - Roxo/Violeta */
+.tema-mae {
+    --cor-primaria: #A78BFA;
+    --cor-secundaria: #9370DB;
+    --cor-accent: #7C3AED;
+    --gradiente: linear-gradient(135deg, #A78BFA, #9370DB);
+}
+
+/* Ursula Burns - Rosa/Magenta */
+.tema-ursula {
+    --cor-primaria: #F472B6;
+    --cor-secundaria: #EC4899;
+    --cor-accent: #DB2777;
+    --gradiente: linear-gradient(135deg, #F472B6, #EC4899);
+}
+
+/* Kimberly Bryant - Verde Esmeralda */
+.tema-kimberly {
+    --cor-primaria: #34D399;
+    --cor-secundaria: #10B981;
+    --cor-accent: #059669;
+    --gradiente: linear-gradient(135deg, #34D399, #10B981);
+}
+
+/* Arlan Hamilton - Azul Claro */
+.tema-arlan {
+    --cor-primaria: #FBBF24;
+    --cor-secundaria: #F59E0B;
+    --cor-accent: #D97706;
+    --gradiente: linear-gradient(135deg, #FBBF24, #FCA5A5);
+}
+
+/* Joy Buolamwini - Azul */
+.tema-joy {
+    --cor-primaria: #60A5FA;
+    --cor-secundaria: #3B82F6;
+    --cor-accent: #1D4ED8;
+    --gradiente: linear-gradient(135deg, #60A5FA, #3B82F6);
+}
+
+/* ============================================
+   BIOGRAFIA PÁGINA - ESTILOS TEMÁTICOS
+   ============================================ */
+
+.bio-hero.tema-katherine,
+.bio-hero.tema-dorothy,
+.bio-hero.tema-mary,
+.bio-hero.tema-mae,
+.bio-hero.tema-ursula,
+.bio-hero.tema-kimberly,
+.bio-hero.tema-arlan,
+.bio-hero.tema-joy {
+    --bio-color: var(--cor-primaria);
+    --bio-color-glow: var(--cor-primaria);
+    --bio-badge-bg: rgba(var(--cor-primaria), 0.1);
+    --bio-badge-border: rgba(var(--cor-primaria), 0.2);
+    --bio-gradient: var(--gradiente);
+}
+
+/* Fundo temático com gradiente animado */
+.bio-theme-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.03;
+    pointer-events: none;
+    background: var(--cor-primaria);
+}
+
+/* Barra de cor no topo */
+.bio-color-bar {
+    height: 4px;
+    background: var(--cor-primaria);
+    animation: slideInRight 0.8s ease-out;
+}
+
+/* Cartão temático */
+.bio-theme-card {
+    background: var(--cor-primaria);
+    color: #fff;
+}
+
+.bio-theme-card.light {
+    background: rgba(var(--cor-primaria), 0.1);
+    border: 1px solid rgba(var(--cor-primaria), 0.2);
+    color: var(--cor-texto);
+}
+
+/* ============================================
+   TIMELINE TEMÁTICA
+   ============================================ */
+
+.timeline-dot {
+    width: 12px;
+    height: 12px;
+    background: var(--cor-primaria);
+    border: 3px solid var(--cor-bg);
+    border-radius: 50%;
+    animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.timeline-dot::after {
+    content: '';
+    position: absolute;
+    inset: -8px;
+    border: 2px solid var(--cor-primaria);
+    border-radius: 50%;
+    opacity: 0.2;
+    animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* ============================================
+   ÍCONES TEMÁTICOS
+   ============================================ */
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--cor-primaria);
+    opacity: 0.2;
+    transition: all 0.3s ease;
+}
+
+.icon-box:hover {
+    opacity: 0.4;
+    transform: translateY(-4px);
+}
+
+.icon-box svg {
+    width: 28px;
+    height: 28px;
+    color: var(--cor-primaria);
+}
+
+/* ============================================
+   HERO HIGHLIGHT ITEMS
+   ============================================ */
+
+.highlight-item {
+    padding: 2rem;
+    border-radius: var(--radius);
+    background: var(--cor-bg-card);
+    border: 1px solid var(--cor-borda);
+    position: relative;
+    overflow: hidden;
+}
+
+.highlight-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: var(--cor-primaria);
+}
+
+.highlight-item h3 {
+    color: var(--cor-primaria);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.highlight-item p {
+    color: var(--cor-texto-muted);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+/* ============================================
+   LEGADO & IMPACTO VISUAL
+   ============================================ */
+
+.impacto-item {
+    text-align: center;
+    padding: 2rem 1rem;
+    border-radius: var(--radius);
+    background: rgba(var(--cor-primaria), 0.05);
+    border: 1px solid rgba(var(--cor-primaria), 0.15);
+    transition: all 0.3s ease;
+}
+
+.impacto-item:hover {
+    background: rgba(var(--cor-primaria), 0.1);
+    border-color: rgba(var(--cor-primaria), 0.25);
+    transform: translateY(-4px);
+}
+
+.impacto-numero {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--cor-primaria);
+    margin-bottom: 0.5rem;
+}
+
+.impacto-label {
+    font-size: 0.9rem;
+    color: var(--cor-texto-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* ============================================
+   RESPONSIVE AJUSTES
+   ============================================ */
+
+@media (max-width: 768px) {
+    .impacto-item {
+        padding: 1.5rem 1rem;
+    }
+
+    .highlight-item {
+        padding: 1.5rem 1.25rem;
+    }
+}

@@ -1,0 +1,297 @@
+<!-- 
+    CSS UTILITY CLASSES REFERENCE
+    Todas as classes CSS disponíveis para uso no projeto
+    Versão v2.0 - Modularizada e Responsiva
+-->
+
+<!-- ================================
+   ANIMAÇÕES (classes utilitárias)
+   ================================ -->
+
+<!-- Aplicar animação float -->
+<div class="animate-float">Flutua suavemente</div>
+
+<!-- Aplicar animação pulse -->
+<div class="animate-pulse">Pisca suavemente</div>
+
+<!-- Aplicar animação glow -->
+<div class="animate-glow">Brilha</div>
+
+<!-- Animação fade-in ao carregar -->
+<div class="animate-in">Fade in</div>
+
+<!-- ================================
+   BOTÕES & INTERAÇÕES
+   ================================ -->
+
+<!-- Botão padrão -->
+<button>Botão Padrão</button>
+
+<!-- Botão primário (gradiente) -->
+<button class="btn-primary">Botão Primário</button>
+
+<!-- Botão secundário -->
+<button class="btn-secondary">Botão Secundário</button>
+
+<!-- Link estilizado -->
+<a href="#" class="btn">Link como Botão</a>
+
+<!-- ================================
+   BADGES & TAGS
+   ================================ -->
+
+<!-- Badge padrão -->
+<span class="badge">Tag</span>
+
+<!-- Badge primária (vermelha) -->
+<span class="badge primary">Importante</span>
+
+<!-- Badge secundária (ciano) -->
+<span class="badge secondary">Secundária</span>
+
+<!-- ================================
+   TIPOGRAFIA & TEXTO
+   ================================ -->
+
+<!-- Texto com gradiente -->
+<h2 class="text-gradient">Título com Gradiente</h2>
+
+<!-- Texto destacado com underline -->
+<p><span class="text-highlight">Texto Destacado</span></p>
+
+<!-- Texto muted (cinzento) -->
+<p class="text-muted">Texto com cor muted</p>
+
+<!-- Texto pequeno -->
+<p class="text-small">Texto pequeno</p>
+
+<!-- ================================
+   GRIDS RESPONSIVAS
+   ================================ -->
+
+<!-- Grid 2 colunas (responsive) -->
+<div class="grid-2">
+    <div>Coluna 1</div>
+    <div>Coluna 2</div>
+</div>
+
+<!-- Grid 3 colunas -->
+<div class="grid-3">
+    <div>Coluna 1</div>
+    <div>Coluna 2</div>
+    <div>Coluna 3</div>
+</div>
+
+<!-- Grid 4 colunas -->
+<div class="grid-4">
+    <div>Col 1</div>
+    <div>Col 2</div>
+    <div>Col 3</div>
+    <div>Col 4</div>
+</div>
+
+<!-- ================================
+   CARDS & CONTAINERS
+   ================================ -->
+
+<!-- Card padrão (com hover effect) -->
+<article class="card">
+    <div class="card-glow" aria-hidden="true"></div>
+    <div class="card-conteudo">
+        <h3 class="card-titulo">Título do Card</h3>
+        <p class="card-area">Categoria</p>
+        <p class="card-descricao">Descrição do card</p>
+    </div>
+</article>
+
+<!-- ================================
+   ANIMAÇÕES DE SCROLL
+   ================================ -->
+
+<!-- Elemento que aparece ao rolar -->
+<div class="revelar">Conteúdo que aparece ao rolar</div>
+
+<!-- (Classe .revelado é adicionada automaticamente pelo JS) -->
+
+<!-- ================================
+   UTILITÁRIOS
+   ================================ -->
+
+<!-- Com blur backdrop -->
+<div class="backdrop-blur">Com blur de fundo</div>
+
+<!-- Transição suave em tudo -->
+<div class="transition-all">Com transição</div>
+
+<!-- Cursor pointer -->
+<div class="cursor-pointer">Clicável</div>
+
+<!-- Sem seleção de texto -->
+<div class="select-none">Não selecionável</div>
+
+<!-- Sem scroll horizontal -->
+<div class="no-scroll">Sem scroll padrão</div>
+
+<!-- ================================
+   TEMAS POR MULHER
+   ================================ -->
+
+<!-- Tema Katherine Johnson (vermelho) -->
+<div class="tema-katherine">
+    <!-- Variáveis CSS automáticas -->
+</div>
+
+<!-- Tema Dorothy Vaughan (ciano) -->
+<div class="tema-dorothy">
+    <!-- --cor-primaria: #4ECDC4 -->
+</div>
+
+<!-- Tema Mary Jackson (dourado) -->
+<div class="tema-mary">
+    <!-- --cor-primaria: #FBBF24 -->
+</div>
+
+<!-- Tema Mae Jemison (roxo) -->
+<div class="tema-mae">
+    <!-- --cor-primaria: #A78BFA -->
+</div>
+
+<!-- Tema Ursula Burns (rosa) -->
+<div class="tema-ursula">
+    <!-- --cor-primaria: #F472B6 -->
+</div>
+
+<!-- Tema Kimberly Bryant (verde) -->
+<div class="tema-kimberly">
+    <!-- --cor-primaria: #34D399 -->
+</div>
+
+<!-- ================================
+   COMPONENTES DE BIOGRAFIA
+   ================================ -->
+
+<!-- Card de estatística -->
+<div class="card-estatistica revelar">
+    <div class="numero" data-valor="100">0</div>
+    <div class="stat-label">Anos de Excelência</div>
+</div>
+
+<!-- Card de recurso -->
+<div class="recurso">
+    <div class="recurso-icon">
+        <svg>...</svg>
+    </div>
+    <div class="recurso-content">
+        <h3>Título</h3>
+        <p>Descrição</p>
+        <a href="#" class="recurso-link">Saiba mais</a>
+    </div>
+</div>
+
+<!-- Card criador -->
+<div class="criador-card">
+    <div class="criador-avatar">👩‍💻</div>
+    <div class="criador-nome">Nome</div>
+    <div class="criador-funcao">Função</div>
+</div>
+
+<!-- ================================
+   ESTRUTURA DE PÁGINA COMPLETA
+   ================================ -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Carregar todos os CSS -->
+    <link rel="stylesheet" href="design/global.css">
+    <link rel="stylesheet" href="design/components.css">
+    <link rel="stylesheet" href="design/homepage.css">
+    <link rel="stylesheet" href="design/themes.css">
+</head>
+<body>
+    <!-- Elementos de fundo -->
+    <div id="particles-bg" class="particles-bg" aria-hidden="true"></div>
+    <div id="cursor-glow" class="cursor-glow" aria-hidden="true"></div>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Suas seções aqui -->
+    </main>
+
+    <!-- Scripts modulares -->
+    <script type="module" src="animacoes/main-new.js"></script>
+</body>
+</html>
+
+<!-- ================================
+   KEYFRAMES DISPONÍVEIS
+   ================================ -->
+
+/*
+Todas as animações disponíveis:
+- fadeInUp
+- fadeInDown
+- slideInLeft
+- slideInRight
+- scaleIn
+- pulse-glow
+- pulse-smooth
+- float
+- shimmer
+- glow-pulse
+- slide-up
+- slide-down
+- rotate-in
+- bounce-in
+- gradient-shift
+- gradient-shift-fast
+- float-particle (para partículas)
+*/
+
+<!-- ================================
+   CORES DISPONÍVEIS (CSS Variables)
+   ================================ -->
+
+/*
+:root {
+    --cor-bg: #0a0a0f;                  /* Fundo principal */
+    --cor-bg-card: rgba(..., 0.04);     /* Fundo de cards */
+    --cor-bg-card-hover: rgba(..., 0.08); /* Card hover */
+    --cor-texto: #e4e4e7;                /* Texto padrão */
+    --cor-texto-muted: #a1a1aa;          /* Texto muted */
+    --cor-texto-titulo: #fafafa;         /* Texto de títulos */
+    --cor-borda: rgba(255, 255, 255, 0.08);     /* Bordas */
+    --cor-borda-hover: rgba(255, 255, 255, 0.15); /* Borda hover */
+    
+    --grad-1: #FF6B6B;      /* Vermelho */
+    --grad-2: #4ECDC4;      /* Ciano */
+    --grad-3: #A78BFA;      /* Roxo */
+    --grad-4: #FBBF24;      /* Dourado */
+    --grad-5: #F472B6;      /* Rosa */
+    
+    --fonte-titulo: 'Space Grotesk', sans-serif;
+    --fonte-corpo: 'Inter', sans-serif;
+    
+    --radius: 16px;         /* Border radius padrão */
+    --radius-sm: 8px;       /* Border radius pequeno */
+    --radius-full: 9999px;  /* Completamente redondo */
+}
+*/
+
+<!-- ================================
+   DICAS DE USO
+   ================================ -->
+
+<!--
+1. SEMPRE use classes ao invés de IDs para flexibilidade
+2. Combine classes: <div class="card revelar animate-in">
+3. Use grid-2, grid-3 ou grid-4 para layouts responsivos
+4. Temas (tema-katherine, etc) mudam --cor-primaria automaticamente
+5. data-* attributes associados com JavaScript (ex: data-valor="100")
+6. aria-hidden="true" para elementos puramente decorativos
+7. Classes .revelar são animadas automaticamente pelo JS
+-->

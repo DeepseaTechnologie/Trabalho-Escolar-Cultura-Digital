@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mary Jackson - A primeira engenheira negra da NASA que lutou pela igualdade e abriu portas para outras mulheres negras.">
     <title>Mary Jackson - Mulheres Negras na Tecnologia</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="design/global.css">
+    <link rel="stylesheet" href="design/components.css">
     <link rel="stylesheet" href="design/biografia.css">
+    <link rel="stylesheet" href="design/themes.css">
+    
     <style>
         :root {
-            --bio-color: #FFE66D;
-            --bio-color-glow: rgba(255, 230, 109, 0.18);
-            --bio-badge-bg: rgba(255, 230, 109, 0.1);
-            --bio-badge-border: rgba(255, 230, 109, 0.2);
-            --bio-gradient: linear-gradient(135deg, #FFE66D, #FBBF24);
+            --cor-primaria: #FFE66D;
+            --cor-secundaria: #FBBF24;
+            --cor-accent: #FCD34D;
+            --gradiente: linear-gradient(135deg, #FFE66D, #FBBF24);
         }
     </style>
 </head>
@@ -23,16 +28,25 @@
     <div id="particles-bg" class="particles-bg" aria-hidden="true"></div>
     <div id="cursor-glow" class="cursor-glow" aria-hidden="true"></div>
 
-    <header class="bio-hero">
+    <header class="bio-hero tema-mary">
+        <div class="bio-theme-bg"></div>
+        <div class="bio-color-bar"></div>
+        
         <div class="container bio-hero-content">
             <a href="index.html#biografias" class="bio-back-link">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-                Voltar
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Voltar às Biografias
             </a>
-            <div class="bio-badge">Engenheira Aeroespacial &bull; NASA</div>
+            
+            <div class="bio-badge">🏗️ Engenheira Aeroespacial · NASA</div>
+            
             <h1 class="bio-hero-name">Mary Jackson</h1>
-            <p class="bio-hero-subtitle">A primeira engenheira negra da NASA que lutou pela igualdade</p>
-            <p class="bio-hero-dates">1921 &mdash; 2005</p>
+            
+            <p class="bio-hero-subtitle">A Primeira Engenheira Negra da NASA</p>
+            
+            <p class="bio-hero-dates">🫧 9 de Abril, 1921 — 11 de Fevereiro, 2005 (83 anos)</p>
         </div>
     </header>
 
@@ -41,15 +55,191 @@
 
         <section class="bio-section">
             <div class="container">
-                <h2 class="bio-section-title"><span>Sua Historia</span></h2>
+                <h2 class="bio-section-title"><span>Sua Jornada Extraordinária</span></h2>
+                
                 <div class="bio-story">
-                    <p>Mary Winston Jackson nasceu em 9 de abril de 1921, em Hampton, Virginia. Formou-se em matematica e ciencias fisicas pelo Hampton Institute. Apos trabalhar como professora e escrituraria, ingressou na NACA em 1951 como "computadora de pesquisa".</p>
-                    <p>No laboratorio, Mary trabalhava sob a supervisao do engenheiro Kazimierz Czarnecki, que reconheceu seu talento excepcional e a encorajou a se tornar engenheira. Para isso, Mary precisava cursar materias avancadas na Universidade da Virginia -- em Hampton, uma escola exclusivamente branca.</p>
-                    <p>Em uma decisao corajosa, Mary solicitou a cidade de Hampton uma permissao especial para assistir aulas em uma escola segregada. Seu pedido foi concedido, e em 1958 ela concluiu os cursos necessarios, tornando-se a primeira engenheira negra da NASA. Sua especializacao foi em aerodinamica experimental, e ela contribuiu significativamente para a compreensao do fluxo de ar ao redor de aeronaves.</p>
-                    <p>Nos anos seguintes, frustrada com a lentidao das mudancas para mulheres e minorias, Mary aceitou uma reducao de cargo para trabalhar no Escritorio de Oportunidades Iguais de Emprego da NASA, onde influenciou diretamente politicas de contratacao e promocao que beneficiaram centenas de mulheres e profissionais negros.</p>
+                    <p><strong>Mary Winston Jackson</strong> nasceu em 9 de abril de 1921, em Hampton, Virgínia. Cresceu em uma família que valorizava a educação, mesmo em tempos de segregação racial brutal. Sua mãe foi professora; seu pai trabalhou em diversos empregos para manter a família. Desde jovem, Mary mostrou uma mente matemática aguçada e curiosidade investigativa—traços que a definiriam para sempre.</p>
+                    
+                    <p>Mary formou-se em Matemática e Ciências Físicas pela Hampton Institute (hoje Hampton University), uma universidade historicamente negra. Trabalhou como professora e depois como escriturária, profissões respeitáveis mas que não satisfaziam sua sede intelectual. Então, em 1951, aos 30 anos, Mary ingressou na NACA como uma "computadora de pesquisa"—uma das mulheres negras que realizavam os cálculos complexos que alimentavam a engenharia aeronáutica americana.</p>
+                    
+                    <p>No laboratório Langley, Mary trabalhou sob a supervisão do engenheiro Kazimierz "Kaz" Czarnecki, um homem que, diferentemente de muitos colegas, enxergava além da cor da pele. Kaz reconheceu imediatamente o talento excepcional de Mary e fez algo extraordinário: a encorajou a seguir uma carreira em engenharia aeroespacial. "Você é inteligente o suficiente. Vá para a engenharia", declarou ele. Essas simples palavras mudaram o curso da história.</p>
+                    
+                    <p>Mas havia um obstáculo imenso. Para se tornar uma engenheira qualificada, Mary precisaria cursar disciplinas avançadas em uma universidade. Em Hampton, em 1953, não havia universidade pública que aceitasse negros. A solução exigiu coragem e determinação extraordinárias. Mary solicitou formalmente à cidade de Hampton uma permissão especial para assistir aulas na Universidade da Virgínia, uma instituição exclusivamente branca. A cidade, bajo pressão dos tempos que começavam a mudar, concedeu sua solicitação—um precedente histórico.</p>
+                    
+                    <blockquote style="margin: 2.5rem 0; padding: 1.5rem; background: rgba(255, 230, 109, 0.1); border-left: 4px solid #FFE66D; border-radius: 8px; font-style: italic;">
+                        "Cada vez que eu batia na porta e ela se abria, fiz tudo certo. Quando a próxima porta se abria, eu fiz isso bem também."
+                        <br><strong>— Mary Jackson</strong>
+                    </blockquote>
+                    
+                    <p>Mary enfrentou discriminação brutal. Tinha que usar banheiros "para coloridos", não podia comer nos restaurantes, enfrentava olhares hostis todos os dias. Mas continuou. Completou os cursos avançados necessários e, em 1958, aos 37 anos, tornou-se a primeira engenheira negra da NASA. Sua especialização foi em aerodinâmica experimental—o estudo de como o ar flui ao redor de aeronaves. Trabalhou no famoso túnel de vento de Langley, contribuindo significativamente para o desenvolvimento de aeronaves hipersônicas.</p>
+                    
+                    <p>Mary não apenas alcançou sucesso pessoal—ela abriu portas. Trabalhou em aerodinâmica experimental durante a década de 1960 e início de 1970, contribuindo para compreensão de fluxo supersônico. Seus relatórios técnicos e colaborações foram fundamentais. Mas depois, vendo a lentidão das mudanças para mulheres e profissionais negros em toda a NASA, Mary fez uma decisão que mudaria sua trajetória: em 1979, aceitou uma redução de cargo para trabalhar no Escritório de Oportunidades Iguais de Emprego da NASA. Durante 13 anos, trabalhou para mudar sistemas, influenciando diretamente políticas de contratação e promoção que beneficiaram centenas de pessoas.</p>
                 </div>
             </div>
         </section>
+
+        <section class="bio-section">
+            <div class="container">
+                <div class="bio-quote">
+                    <p>"Não importa se você trabalha em uma universidade ou em uma pista de pouso de ficção científica em Luke Skywalker. Se você faz seu trabalho bem, e as pessoas que trabalham com você sabem que você faz seu trabalho bem, você está bem."</p>
+                    <cite>— Mary Jackson</cite>
+                </div>
+            </div>
+        </section>
+
+        <section class="bio-section">
+            <div class="container">
+                <h2 class="bio-section-title"><span>Realizações Históricas</span></h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                    <div class="bio-highlight-card">
+                        <div class="bio-highlight-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <h3>Primeira Engenheira Negra da NASA (1958)</h3>
+                        <p>Tornou-se a primeira engenheira negra da NASA, quebrando barreiras de raça e gênero simultaneamente. Esta conquista foi resultado de coragem, perseverança e apoio crucial de mentores que acreditavam em seu potencial.</p>
+                    </div>
+                    
+                    <div class="bio-highlight-card">
+                        <div class="bio-highlight-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+                            </svg>
+                        </div>
+                        <h3>Pesquisa em Aerodinâmica Hipersônica</h3>
+                        <p>Trabalhou em pesquisa experimental de fluxo supersônico e aerodinâmica hipersônica, contribuindo para o desenvolvimento de tecnologias de voo críticas para a era espacial.</p>
+                    </div>
+                    
+                    <div class="bio-highlight-card">
+                        <div class="bio-highlight-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 00-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 010 7.75"/>
+                            </svg>
+                        </div>
+                        <h3>Defensora de Igualdade (1979-1991)</h3>
+                        <p>Trabalhou no Escritório de Oportunidades Iguais de Emprego, influenciando diretamente políticas que beneficiaram centenas de mulheres e pessoas negras na NASA.</p>
+                    </div>
+                    
+                    <div class="bio-highlight-card">
+                        <div class="bio-highlight-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/>
+                                <path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/>
+                            </svg>
+                        </div>
+                        <h3>Publicações Técnicas</h3>
+                        <p>Publicou trabalhos de pesquisa sobre aerodinâmica e fluxo hipersônico, contribuindo para a literatura científica e comprovando sua competência técnica.</p>
+                    </div>
+
+                    <div class="bio-highlight-card">
+                        <div class="bio-highlight-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="1"/>
+                                <circle cx="19" cy="5" r="1"/>
+                                <circle cx="5" cy="19" r="1"/>
+                                <circle cx="5" cy="5" r="1"/>
+                                <circle cx="19" cy="19" r="1"/>
+                            </svg>
+                        </div>
+                        <h3>Símbolo de Perseverança</h3>
+                        <p>Provou que educação, determinação e coragem podem vencer até as barreiras mais intransponíveis de racismo e sexismo institucionalizados.</p>
+                    </div>
+
+                    <div class="bio-highlight-card">
+                        <div class="bio-highlight-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+                            </svg>
+                        </div>
+                        <h3>Impacto no Filme</h3>
+                        <p>Sua história foi retratada em "Oculto Números" (2016), levando sua jornada inspiradora para milhões de espectadores globais e reavivando seu legado.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bio-section" style="background: linear-gradient(135deg, rgba(255, 230, 109, 0.1) 0%, rgba(251, 191, 36, 0.1) 100%); border-top: 1px solid rgba(255, 230, 109, 0.2); border-bottom: 1px solid rgba(255, 230, 109, 0.2); margin: 4rem 0;">
+            <div class="container" style="text-align: center;">
+                <h3 style="font-size: 1.4rem; margin-bottom: 1.5rem; color: #FFE66D;">Legado de Coragem</h3>
+                <p style="font-size: 1.1rem; max-width: 700px; margin: 0 auto; color: var(--cor-texto); line-height: 1.9;">
+                    Mary Jackson não foi apenas uma engenheira—foi uma guerreira. 
+                    <br><br>
+                    Cada dia que ela entrava naquela universidade branca para assistir aulas era um ato de desafio contra um sistema que a dizia que não pertencia. 
+                    Cada relatório técnico que ela publicava era uma prova de que genialidade não tem cor. 
+                    Cada política que ela ajudava a mudar no Escritório de Igualdade de Oportunidades abria portas para outras pessoas negras.
+                    <br><br>
+                    Mary viveu uma verdade simples: "Faça seu trabalho bem. As pessoas vão saber." E as pessoas souberam. Seu legado continua inspirando engenheiras, cientistas e ativistas por igualdade em todo o mundo.
+                </p>
+            </div>
+        </section>
+
+        <section class="bio-section">
+            <div class="container">
+                <h2 class="bio-section-title"><span>Outras Pioneiras</span></h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem;">
+                    <a href="katherine-johnson.html" class="card" style="--card-accent: #FF6B6B; text-decoration: none;">
+                        <div class="card-conteudo">
+                            <div class="card-icon-wrap">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                            </div>
+                            <h3 class="card-titulo">Katherine Johnson</h3>
+                            <p class="card-area">Matemática</p>
+                        </div>
+                    </a>
+
+                    <a href="dorothy-vaughan.html" class="card" style="--card-accent: #4ECDC4; text-decoration: none;">
+                        <div class="card-conteudo">
+                            <div class="card-icon-wrap">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="2" y="3" width="20" height="14" rx="2"/>
+                                </svg>
+                            </div>
+                            <h3 class="card-titulo">Dorothy Vaughan</h3>
+                            <p class="card-area">Programadora</p>
+                        </div>
+                    </a>
+
+                    <a href="mae-jemison.html" class="card" style="--card-accent: #A78BFA; text-decoration: none;">
+                        <div class="card-conteudo">
+                            <div class="card-icon-wrap">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10"/>
+                                </svg>
+                            </div>
+                            <h3 class="card-titulo">Mae Jemison</h3>
+                            <p class="card-area">Astronauta</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="border-top: 1px solid rgba(255, 230, 109, 0.2);">
+        <div class="container">
+            <p style="text-align: center; margin-bottom: 1rem;">
+                <a href="index.html" style="color: #FFE66D; text-decoration: none; font-weight: 600;">
+                    ← Voltar para a Página Principal
+                </a>
+            </p>
+            <p style="text-align: center; color: var(--cor-texto-muted);">
+                Celebrando Mary Jackson | 1921-2005 | A Primeira Engenheira Negra da NASA
+            </p>
+        </div>
+    </footer>
+
+    <script type="module" src="animacoes/main-new.js"></script>
+</body>
+</html>
 
         <section class="bio-section">
             <div class="container">

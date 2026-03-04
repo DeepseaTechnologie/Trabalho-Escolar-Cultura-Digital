@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dorothy Vaughan - A pioneira que liderou a revolução digital na NASA. Programadora, líder e visionária que ensinou FORTRAN para suas colegas.">
     <title>Dorothy Vaughan - Mulheres Negras na Tecnologia</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="design/global.css">
+    <link rel="stylesheet" href="design/components.css">
     <link rel="stylesheet" href="design/biografia.css">
+    <link rel="stylesheet" href="design/themes.css">
+    
     <style>
         :root {
-            --bio-color: #4ECDC4;
-            --bio-color-glow: rgba(78, 205, 196, 0.18);
-            --bio-badge-bg: rgba(78, 205, 196, 0.1);
-            --bio-badge-border: rgba(78, 205, 196, 0.2);
-            --bio-gradient: linear-gradient(135deg, #4ECDC4, #2DD4BF);
+            --cor-primaria: #4ECDC4;
+            --cor-secundaria: #2DD4BF;
+            --cor-accent: #06D6A0;
+            --gradiente: linear-gradient(135deg, #4ECDC4, #2DD4BF);
         }
     </style>
 </head>
@@ -23,16 +28,25 @@
     <div id="particles-bg" class="particles-bg" aria-hidden="true"></div>
     <div id="cursor-glow" class="cursor-glow" aria-hidden="true"></div>
 
-    <header class="bio-hero">
+    <header class="bio-hero tema-dorothy">
+        <div class="bio-theme-bg"></div>
+        <div class="bio-color-bar"></div>
+        
         <div class="container bio-hero-content">
             <a href="index.html#biografias" class="bio-back-link">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-                Voltar
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Voltar às Biografias
             </a>
-            <div class="bio-badge">Matematica &bull; Programadora &bull; NASA</div>
+            
+            <div class="bio-badge">💻 Programadora · NASA · Liderança</div>
+            
             <h1 class="bio-hero-name">Dorothy Vaughan</h1>
-            <p class="bio-hero-subtitle">A pioneira que liderou a revolucao digital na NASA</p>
-            <p class="bio-hero-dates">1910 &mdash; 2008</p>
+            
+            <p class="bio-hero-subtitle">A Pioneira que Liderou a Revolução Digital</p>
+            
+            <p class="bio-hero-dates">🫧 20 de Setembro, 1910 — 10 de Novembro, 2008 (98 anos)</p>
         </div>
     </header>
 
@@ -41,12 +55,25 @@
 
         <section class="bio-section">
             <div class="container">
-                <h2 class="bio-section-title"><span>Sua Historia</span></h2>
+                <h2 class="bio-section-title"><span>Sua Jornada Extraordinária</span></h2>
+                
                 <div class="bio-story">
-                    <p>Dorothy Johnson Vaughan nasceu em 20 de setembro de 1910, em Kansas City, Missouri. Cresceu em Morgantown, West Virginia, onde se formou com honras no ensino medio. Em 1929, concluiu sua graduacao em matematica na Wilberforce University, tornando-se uma das poucas mulheres negras com diploma universitario de sua geracao.</p>
-                    <p>Inicialmente, Dorothy trabalhou como professora de matematica em Farmville, Virginia. Em 1943, durante a Segunda Guerra Mundial, a necessidade urgente de "computadoras humanas" levou o Langley Memorial Aeronautical Laboratory (parte da NACA, precursora da NASA) a contratar mulheres negras para realizar calculos complexos. Dorothy foi uma delas.</p>
-                    <p>No laboratorio, as mulheres negras trabalhavam separadas das brancas em uma unidade chamada "West Area Computing". Apesar da segregacao e do preconceito, Dorothy se destacou por sua competencia excepcional. Em 1949, foi promovida a supervisora do grupo -- a primeira mulher negra a ocupar esse cargo na historia da NACA.</p>
-                    <p>Com visao de futuro, Dorothy percebeu que computadores eletronicos substituiriam as computadoras humanas. Em vez de resistir a mudanca, ela se antecipou: aprendeu sozinha a linguagem de programacao FORTRAN e ensinou suas colegas, garantindo que toda a equipe pudesse fazer a transicao. Essa iniciativa nao apenas salvou os empregos de suas colegas, mas posicionou o grupo como lider na nova era da computacao.</p>
+                    <p><strong>Dorothy Johnson Vaughan</strong> nasceu em 20 de setembro de 1910, em Kansas City, Missouri. Desde a infância, mostrou um dom extraordinário para a matemática. Cresceu em Morgantown, Virgínia Ocidental, onde se formou com honras no ensino médio. Em 1929, completou sua graduação em Matemática na Wilberforce University, tornando-se uma das poucas mulheres negras com diploma universitário de sua geração.</p>
+                    
+                    <p>Inicialmente, Dorothy trabalhou como professora de Matemática em Farmville, Virgínia, uma profissão respeitada mas com limitações claras. Em 1943, durante a Segunda Guerra Mundial, a necessidade urgente de cálculos complexos para o desenvolvimento aeronáutico levou o Langley Memorial Aeronautical Laboratory (parte da NACA, precursora da NASA) a contratar mulheres negras para realizar estes trabalhos. Dorothy foi uma delas, deixando sua carreira como professora para abrirze para um novo horizonte.</p>
+                    
+                    <p>No laboratório, as mulheres negras trabalhavam separadas das mulheres brancas em uma unidade chamada "West Area Computing". Apesar da segregação racial explícita e do preconceito institucionalizado, Dorothy se destacou imediatamente por sua competência matemática excepcional e sua liderança natural. Seus cálculos eram precisos, sua velocidade impressionava, e sua capacidade de resolver problemas era inigualável.</p>
+                    
+                    <p>Em 1949, aos 39 anos, Dorothy foi promovida a supervisora do grupo—a primeira mulher negra a ocupar um cargo de liderança na história da NACA. Era um reconhecimento extraordinário em uma era de segregação, mas também uma maior responsabilidade. Dorothy não apenas supervisionava o trabalho matemático; ela também protegia e defendia suas colegas, frequentemente enfrentando supervisores que não respeitavam o trabalho das mulheres negras.</p>
+                    
+                    <p>Então veio o momento que definiria seu legado. Dorothy viu o futuro chegando: computadores eletrônicos substituiriam rapidamente os cálculos feitos à mão. Enquanto muitos temiam esta transição, Dorothy tomou uma decisão corajosa. Aprendeu sozinha a linguagem de programação FORTRAN (uma linguagem complexa e nova), e sistematicamente ensinou suas colegas. Ela garantiu que a equipe inteira pudesse fazer a transição para a era da computação eletrônica.</p>
+                    
+                    <blockquote style="margin: 2.5rem 0; padding: 1.5rem; background: rgba(78, 205, 196, 0.1); border-left: 4px solid #4ECDC4; border-radius: 8px; font-style: italic;">
+                        "Eu mudei o que podia, e o que não podia mudar, encontrei um jeito de contornar."
+                        <br><strong>— Dorothy Vaughan</strong>
+                    </blockquote>
+                    
+                    <p>Esta não era apenas uma ação prática de sobrevivência profissional—era um ato de verdadeira liderança e solidariedade. Dorothy não apenas se adaptou à mudança; ela se tornou a ponte entre dois mundos tecnológicos, garantindo que suas colegas não fossem deixadas para trás. Trabalhou na NASA por 28 anos (1943-1971), e durante esse tempo, não apenas realizou cálculos críticos para o programa espacial americano, mas também redefiniu o que liderança poderia ser para mulheres negras.</p>
                 </div>
             </div>
         </section>
@@ -54,98 +81,165 @@
         <section class="bio-section">
             <div class="container">
                 <div class="bio-quote">
-                    <p>Eu mudei o que podia, e o que nao podia mudar, encontrei um jeito de contornar.</p>
-                    <cite>-- Dorothy Vaughan</cite>
+                    <p>"Nós temos que começar a acreditar em nós mesmas. Precisamos pensar que há algo de bom que podemos contribuir para a sociedade. Ninguém vai dar a você—você tem que tomar."</p>
+                    <cite>— Dorothy Vaughan</cite>
                 </div>
             </div>
         </section>
 
         <section class="bio-section">
             <div class="container">
-                <h2 class="bio-section-title"><span>Conquistas Principais</span></h2>
-                <div class="bio-highlights">
+                <h2 class="bio-section-title"><span>Realizações Históricas</span></h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
                     <div class="bio-highlight-card">
                         <div class="bio-highlight-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 00-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 010 7.75"/>
+                            </svg>
                         </div>
                         <h3>Primeira Supervisora Negra (1949)</h3>
-                        <p>Tornou-se a primeira mulher negra a ser nomeada supervisora na NACA/NASA, liderando o grupo de computadoras de West Area.</p>
+                        <p>Tornou-se a primeira mulher negra a ser nomeada supervisora e líder de equipe na NACA/NASA, quebrando barreiras de cor e gênero simultaneamente.</p>
                     </div>
+                    
                     <div class="bio-highlight-card">
                         <div class="bio-highlight-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <polyline points="16 18 22 12 16 6"/>
+                                <polyline points="8 6 2 12 8 18"/>
+                            </svg>
                         </div>
                         <h3>Pioneira em FORTRAN</h3>
-                        <p>Aprendeu autonomamente a linguagem FORTRAN e treinou sua equipe inteira, liderando a transicao dos calculos manuais para a computacao eletronica.</p>
+                        <p>Aprendeu autonomamente FORTRAN e treinou toda sua equipe, liderando a transição do cálculo manual para a computação eletrônica.</p>
                     </div>
+                    
                     <div class="bio-highlight-card">
                         <div class="bio-highlight-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+                            </svg>
                         </div>
-                        <h3>Lideranca na Era Digital</h3>
-                        <p>Garantiu que suas colegas nao fossem deixadas para tras na transicao tecnologica, formando uma equipe de programadoras altamente qualificadas.</p>
+                        <h3>Liderança Transformadora</h3>
+                        <p>Garantiu que suas colegas não fossem deixadas para trás na transição tecnológica, preservando empregos e criando a primeira equipe de programadoras negras da NASA.</p>
+                    </div>
+                    
+                    <div class="bio-highlight-card">
+                        <div class="bio-highlight-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                <line x1="12" y1="17" x2="12" y2="21"/>
+                            </svg>
+                        </div>
+                        <h3>Cálculos para Apollo</h3>
+                        <p>Trabalhou em programação para os projetos Mercury, Gemini e Apollo, contribuindo para as maiores conquistas da exploração espacial americana.</p>
+                    </div>
+
+                    <div class="bio-highlight-card">
+                        <div class="bio-highlight-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="1"/>
+                                <circle cx="19" cy="5" r="1"/>
+                                <circle cx="5" cy="19" r="1"/>
+                                <circle cx="5" cy="5" r="1"/>
+                                <circle cx="19" cy="19" r="1"/>
+                            </svg>
+                        </div>
+                        <h3>Símbolo de Mentorado</h3>
+                        <p>Serviu como mentora para centenas de mulheres negras, provando que o apoio e a solidariedade entre mulheres podem derrotar qualquer sistema.</p>
+                    </div>
+
+                    <div class="bio-highlight-card">
+                        <div class="bio-highlight-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+                            </svg>
+                        </div>
+                        <h3>Impacto no Filme</h3>
+                        <p>Sua história foi destacada em "Oculto Números" (2016), levando seu legado de liderança e inovação para milhões de espectadores globais.</p>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="bio-section" style="background: linear-gradient(135deg, rgba(78, 205, 196, 0.1) 0%, rgba(45, 212, 191, 0.1) 100%); border-top: 1px solid rgba(78, 205, 196, 0.2); border-bottom: 1px solid rgba(78, 205, 196, 0.2); margin: 4rem 0;">
+            <div class="container" style="text-align: center;">
+                <h3 style="font-size: 1.4rem; margin-bottom: 1.5rem; color: #4ECDC4;">Legado de Liderança</h3>
+                <p style="font-size: 1.1rem; max-width: 700px; margin: 0 auto; color: var(--cor-texto); line-height: 1.9;">
+                    Dorothy Vaughan não apenas sobreviveu em um mundo hostil—ela o transformou. 
+                    <br><br>
+                    Sua decisão de aprender FORTRAN por conta própria foi um ato de visão. Sua escolha de ensinar suas colegas foi um ato de liderança verdadeira. Ela não esperou que alguém lhe pedisse: ela viu a mudança chegando e se preparou, depois garantiu que sua equipe também o fizesse.
+                    <br><br>
+                    Dorothy provou que liderança não é sobre ter o título maior—é sobre antecipar o futuro e trazer os outros junto com você. Seu legado continua inspirando líderes em tecnologia que reconhecem que nossa força está na comunidade, não na individualidade.
+                </p>
             </div>
         </section>
 
         <section class="bio-section">
             <div class="container">
-                <h2 class="bio-section-title"><span>Em Numeros</span></h2>
-                <div class="bio-facts">
-                    <div class="bio-fact">
-                        <span class="bio-fact-value">28</span>
-                        <span class="bio-fact-label">anos de servico na NACA/NASA</span>
-                    </div>
-                    <div class="bio-fact">
-                        <span class="bio-fact-value">1a</span>
-                        <span class="bio-fact-label">supervisora negra da agencia</span>
-                    </div>
-                    <div class="bio-fact">
-                        <span class="bio-fact-value">98</span>
-                        <span class="bio-fact-label">anos de vida dedicada a ciencia</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+                <h2 class="bio-section-title"><span>Outras Pioneiras</span></h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem;">
+                    <a href="katherine-johnson.html" class="card" style="--card-accent: #FF6B6B; text-decoration: none;">
+                        <div class="card-conteudo">
+                            <div class="card-icon-wrap">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                            </div>
+                            <h3 class="card-titulo">Katherine Johnson</h3>
+                            <p class="card-area">Matemática</p>
+                        </div>
+                    </a>
 
-        <section class="bio-section">
-            <div class="container">
-                <h2 class="bio-section-title"><span>Legado</span></h2>
-                <div class="bio-legacy">
-                    <p>Dorothy Vaughan demonstrou que lideranca vai alem de titulos -- e sobre antecipar mudancas e preparar os outros para o futuro. Sua decisao de aprender FORTRAN por conta propria e ensinar suas colegas foi um ato visionario que transformou o papel das mulheres na computacao.</p>
-                    <p>Sua historia foi contada no livro e filme "Estrelas Alem do Tempo" (Hidden Figures), inspirando milhoes de pessoas ao redor do mundo. Dorothy provou que educacao, resiliencia e solidariedade podem derrubar qualquer barreira.</p>
-                </div>
-            </div>
-        </section>
+                    <a href="mary-jackson.html" class="card" style="--card-accent: #FBBF24; text-decoration: none;">
+                        <div class="card-conteudo">
+                            <div class="card-icon-wrap">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                            </div>
+                            <h3 class="card-titulo">Mary Jackson</h3>
+                            <p class="card-area">Engenheira</p>
+                        </div>
+                    </a>
 
-        <section class="bio-nav">
-            <div class="container">
-                <p class="bio-nav-title">Conheca tambem</p>
-                <div class="bio-nav-grid">
-                    <a href="katherine-johnson.html" class="bio-nav-link"><span class="nav-dot" style="background:#FF6B6B;"></span> Katherine Johnson</a>
-                    <a href="mary-jackson.html" class="bio-nav-link"><span class="nav-dot" style="background:#FFE66D;"></span> Mary Jackson</a>
-                    <a href="mae-jemison.html" class="bio-nav-link"><span class="nav-dot" style="background:#A78BFA;"></span> Mae Jemison</a>
-                    <a href="ursula-burns.html" class="bio-nav-link"><span class="nav-dot" style="background:#F472B6;"></span> Ursula Burns</a>
-                    <a href="kimberly-bryant.html" class="bio-nav-link"><span class="nav-dot" style="background:#34D399;"></span> Kimberly Bryant</a>
-                    <a href="arlan-hamilton.html" class="bio-nav-link"><span class="nav-dot" style="background:#FBBF24;"></span> Arlan Hamilton</a>
-                    <a href="joy-buolamwini.html" class="bio-nav-link"><span class="nav-dot" style="background:#60A5FA;"></span> Joy Buolamwini</a>
-                    <a href="timnit-gebru.html" class="bio-nav-link"><span class="nav-dot" style="background:#F87171;"></span> Timnit Gebru</a>
-                    <a href="ruha-benjamin.html" class="bio-nav-link"><span class="nav-dot" style="background:#C084FC;"></span> Ruha Benjamin</a>
-                    <a href="ayanna-howard.html" class="bio-nav-link"><span class="nav-dot" style="background:#2DD4BF;"></span> Ayanna Howard</a>
-                    <a href="lisa-gelobter.html" class="bio-nav-link"><span class="nav-dot" style="background:#FB923C;"></span> Lisa Gelobter</a>
+                    <a href="mae-jemison.html" class="card" style="--card-accent: #A78BFA; text-decoration: none;">
+                        <div class="card-conteudo">
+                            <div class="card-icon-wrap">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10"/>
+                                </svg>
+                            </div>
+                            <h3 class="card-titulo">Mae Jemison</h3>
+                            <p class="card-area">Astronauta</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="rodape">
+    <footer style="border-top: 1px solid rgba(78, 205, 196, 0.2);">
         <div class="container">
-            <div class="rodape-conteudo">
-                <div class="rodape-brand">
-                    <a href="index.html" style="text-decoration:none;"><span class="rodape-logo">MNT</span></a>
-                    <p>Mulheres Negras na Tecnologia</p>
-                </div>
+            <p style="text-align: center; margin-bottom: 1rem;">
+                <a href="index.html" style="color: #4ECDC4; text-decoration: none; font-weight: 600;">
+                    ← Voltar para a Página Principal
+                </a>
+            </p>
+            <p style="text-align: center; color: var(--cor-texto-muted);">
+                Celebrando Dorothy Vaughan | 1910-2008 | A Programadora que Liderou a Revolução Digital
+            </p>
+        </div>
+    </footer>
+
+    <script type="module" src="animacoes/main-new.js"></script>
+</body>
+</html>
                 <div class="rodape-textos">
                     <p class="rodape-texto">Trabalho escolar sobre Mulheres Negras na Tecnologia</p>
                 </div>
